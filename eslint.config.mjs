@@ -9,7 +9,7 @@ export default [
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    ignores: ['**/*.cjs'],
+    ignores: ['**/*.cjs', 'build/**/*', 'node_modules/**/*'],
   },
   {
     files: ['**/*.{js,ts,jsx,tsx}'],

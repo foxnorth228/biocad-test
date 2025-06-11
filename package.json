@@ -6,7 +6,8 @@
     "build": "webpack --mode production --config webpack.prod.cjs",
     "dev": "webpack serve --mode development --config webpack.dev.cjs",
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "prepare": "husky"
   },
   "author": "Alex Khitry",
   "license": "ISC",
@@ -46,8 +47,16 @@
     "@mui/material": "^7.1.1",
     "babel-loader": "^10.0.0",
     "eslint-webpack-plugin": "^5.0.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.57.0"
+  },
+  "lint-staged": {
+    "*.{tsx,ts,jsx,js}": [
+      "prettier --write --config .prettierrc",
+      "eslint --fix"
+    ]
   }
 }

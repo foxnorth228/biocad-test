@@ -28,8 +28,10 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.jsx'],
     alias: {
-      "@src":        path.resolve( __dirname, "src"),
+      "@":        path.resolve( __dirname, "src"),
       "@shared": path.resolve(__dirname, "src", "shared"),
+      "@features": path.resolve(__dirname, "src", "features"),
+      "@pages": path.resolve(__dirname, "src", "pages"),
     },
   },
   plugins: [
