@@ -32,6 +32,7 @@ module.exports = {
       "@shared": path.resolve(__dirname, "src", "shared"),
       "@features": path.resolve(__dirname, "src", "features"),
       "@pages": path.resolve(__dirname, "src", "pages"),
+      "@widgets": path.resolve(__dirname, "src", "widgets"),
     },
   },
   plugins: [
