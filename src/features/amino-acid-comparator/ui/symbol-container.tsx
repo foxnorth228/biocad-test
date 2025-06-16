@@ -1,6 +1,6 @@
+import Symbol from '@features/amino-acid-comparator/ui/symbol';
 import { Box, BoxProps, useTheme } from '@mui/material';
 import { IAminoAcidSymbols } from '@shared/types/amino-acid';
-import Symbol from '@widgets/amino-acid-comparator/ui/symbol';
 
 interface ISymbolContainerProps extends BoxProps {
   string: string;

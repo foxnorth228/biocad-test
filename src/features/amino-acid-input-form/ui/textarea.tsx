@@ -1,7 +1,7 @@
 import { IAminoAcidValues, IAminoAcidValuesObj } from '@features/amino-acid-input-form/model/types';
 import { TextField } from '@mui/material';
+import localization from '@shared/localization/localization';
 import { AMINO_ACID_REGEXP } from '@shared/types/amino-acid';
-import { capitalizeFirstLetter } from '@shared/utils/capitalizeFirstLetter';
 import { Control, Controller } from 'react-hook-form';
 
 interface ITextareaChildren {
@@ -25,8 +25,8 @@ const Textarea = ({ name, control }: ITextareaChildren) => {
           fullWidth
           rows={5}
           {...field}
-          label={capitalizeFirstLetter(field.name)}
-          placeholder="Input amino acids here"
+          label={localization.formLabels[field.name]}
+          placeholder="Введите аминокислотную цепочку"
           onChange={(e) => {
             const newValue = parseValue(e.target.value);
             field.onChange(newValue);

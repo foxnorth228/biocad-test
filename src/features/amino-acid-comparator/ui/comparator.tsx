@@ -1,6 +1,6 @@
+import SymbolContainer from '@features/amino-acid-comparator/ui/symbol-container';
 import { Stack, Typography, useTheme } from '@mui/material';
 import { useAminoAcidContext } from '@shared/context/context';
-import SymbolContainer from '@widgets/amino-acid-comparator/ui/symbol-container';
 
 const Comparator = () => {
   const aminoAcidContext = useAminoAcidContext();

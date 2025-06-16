@@ -1,6 +1,6 @@
+import Comparator from '@features/amino-acid-comparator/ui/comparator';
 import Form from '@features/amino-acid-input-form/ui/form';
 import { Stack } from '@mui/material';
-import Comparator from '@widgets/amino-acid-comparator/ui/comparator';
 
 const MainPage = () => {
   return (
